@@ -15,7 +15,7 @@ class Timonerie extends Component {
         return(
             <div id='timonerie'>
                 <TimonerieSVG />
-                {/* <GPS /> */}
+                <GPS />
             </div>
         )
     }
