@@ -25,8 +25,37 @@
     width: 10% !important;
     height: 10% !important;
 
-    /* background-color: red; */
+    /* padding: 2px; */
 
     z-index: 1000;
+    /* pointer-events: none; */
+}
+
+#timonerie #GPS:hover {
+    outline: 2px solid white;
+    /* border: 2px white solid;
+    padding: 0px; */
+}
+
+#timonerie #GPS iframe {
     pointer-events: none;
+}
+
+#timonerie #Map {
+    position: absolute;
+    top: 54%;
+    left: 61%;
+    width: 13%;
+    transform: rotate(35.5deg);
+
+    z-index: 1000;
+}
+
+#timonerie #Map img {
+    width: 100%;
+}
+
+#timonerie #Map:hover {
+    /* border: outset 2px white solid; */
+    outline: 2px solid white;
 }
