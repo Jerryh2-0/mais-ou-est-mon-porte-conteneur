@@ -6,7 +6,7 @@
     margin: auto;
 }
 
-#timonerie svg{
+#timonerie #timonerieSVG{
     /* width: 800px;
     height: 600px; */
     /* width: 100%; */
@@ -16,6 +16,8 @@
     /* display: block; */
 
     background-image: url('http://t2.gstatic.com/images?q=tbn:ANd9GcTBDXtANxxJTGfiXkgGQKuwZp6eZy1lYzlvoYHXw7aYlF2igYBbCjz8oM2D7X-wrRJpBWxbSVHZsr_J1EhVr88');
+
+    z-index: 1;
 }
 
 #timonerie #GPS {
@@ -24,10 +26,11 @@
     left: 45%;
     width: 10% !important;
     height: 10% !important;
+    overflow-y: hidden;
 
     /* padding: 2px; */
 
-    z-index: 1000;
+    z-index: 2;
     /* pointer-events: none; */
 }
 
@@ -37,8 +40,10 @@
     padding: 0px; */
 }
 
+
 #timonerie #GPS iframe {
     pointer-events: none;
+    /* margin-top: -20%; */
 }
 
 #timonerie #Map {
@@ -48,7 +53,7 @@
     width: 13%;
     transform: rotate(35.5deg);
 
-    z-index: 1000;
+    z-index: 2;
 }
 
 #timonerie #Map img {
@@ -59,3 +64,80 @@
     /* border: outset 2px white solid; */
     outline: 2px solid white;
 }
+
+#timonerie #marin {
+    position: absolute;
+    top: 40%;
+    /* left: 55%; */
+    left: 43%;
+    /* height: 20%; */
+
+    /* animation: translate 10s linear infinite; */
+
+    z-index: 3;
+}
+
+#timonerie #marin svg {
+    height: 50vh;
+}
+
+#timonerie #marin #leftLeg {
+    /* animation: rotation 5s infinite; */
+    /* animation-name: rotation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+
+    transform-origin: top center;
+    transform-box: fill-box;
+}
+
+#timonerie #marin #rightLeg {
+    /* animation-name: rotation;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+
+    transform-origin: top center;
+    transform-box: fill-box;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateZ(-10deg);
+    }
+    50% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(-10deg);
+    }
+}
+
+@keyframes translate {
+    0% {
+        left: 55%;
+        transform: scale(1, 1);
+    }
+    49.99% {
+        transform: scale(1, 1);
+    }
+    50% {
+        left: 25%;
+        transform: scale(-1, 1);
+    }
+    99.99% {
+        transform: scale(-1, 1);
+    }
+    100% {
+        left:55%;
+        transform: scale(1, 1);
+    }
+}
+
+/* #timonerie #marin g, #timonerie #marin path {
+    position: relative;
+    z-index: 3;
+} */
