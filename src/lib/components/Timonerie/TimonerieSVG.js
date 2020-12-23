@@ -3,6 +3,7 @@ import * as React from "react"
 function TimonerieSVG(props) {
   return (
     <svg
+    id="timonerieSVG"
       xmlns="http://www.w3.org/2000/svg"
       style={{
         isolation: "isolate",
