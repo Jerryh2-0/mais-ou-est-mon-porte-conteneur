@@ -3,12 +3,12 @@ import * as React from "react"
 function TimonerieSVG(props) {
   return (
     <svg
-    id="timonerieSVG"
       xmlns="http://www.w3.org/2000/svg"
       style={{
         isolation: "isolate",
       }}
       viewBox="0 0 1024 768"
+      id="timonerieSVG"
       {...props}
     >
       <defs>
@@ -31,29 +31,6 @@ function TimonerieSVG(props) {
         />
         <mask id="prefix__b">
           <path
-            d="M299.481 509.951h425.336l.678-.951 1.332.951h.492v.35l191.935 136.906-69.684 97.694-161.155-114.95H336.09l-161.975 114.75-69.369-97.918 191.573-135.719v-1.113h1.571l1.059-.751.532.751z"
-            fillRule="evenodd"
-            fill="#fff"
-          />
-        </mask>
-        <path
-          d="M299.481 509.951h425.336l.678-.951 1.332.951h.492v.35l191.935 136.906-69.684 97.694-161.155-114.95H336.09l-161.975 114.75-69.369-97.918 191.573-135.719v-1.113h1.571l1.059-.751.532.751z"
-          fillRule="evenodd"
-          fill="#5D5D5D"
-        />
-        <path
-          d="M299.481 509.951h425.336l.678-.951 1.332.951h.492v.35l191.935 136.906-69.684 97.694-161.155-114.95H336.09l-161.975 114.75-69.369-97.918 191.573-135.719v-1.113h1.571l1.059-.751.532.751z"
-          fillRule="evenodd"
-          fill="#5D5D5D"
-          mask="url(#prefix__b)"
-          vectorEffect="non-scaling-stroke"
-          strokeWidth={2}
-          stroke="#2E2E2E"
-          strokeLinecap="square"
-          strokeMiterlimit={3}
-        />
-        <mask id="prefix__c">
-          <path
             d="M299.481 343.951h425.336l.678-.951 1.332.951h.492v.35l191.935 136.906-69.684 97.694-161.155-114.95H336.09l-161.975 114.75-69.369-97.918 191.573-135.719v-1.113h1.571l1.059-.751.532.751z"
             fillRule="evenodd"
             fill="#fff"
@@ -68,17 +45,29 @@ function TimonerieSVG(props) {
           d="M299.481 343.951h425.336l.678-.951 1.332.951h.492v.35l191.935 136.906-69.684 97.694-161.155-114.95H336.09l-161.975 114.75-69.369-97.918 191.573-135.719v-1.113h1.571l1.059-.751.532.751z"
           fillRule="evenodd"
           fill="#5D5D5D"
-          mask="url(#prefix__c)"
+          mask="url(#prefix__b)"
           vectorEffect="non-scaling-stroke"
           strokeWidth={2}
           stroke="#2E2E2E"
           strokeLinecap="square"
           strokeMiterlimit={3}
         />
+        <mask id="prefix__c">
+          <path
+            d="M104.746 481.207l69.369 97.494v166.2L104.746 724V481.207z"
+            fill="#fff"
+          />
+        </mask>
         <path
-          d="M104.746 647.207v-166l69.369 97.694v166l-69.369-97.694zM849.57 744.701v-165.8l69.684-97.694v165.576l-69.684 97.918z"
+          d="M104.746 481.207l69.369 97.494v166.2L104.746 724V481.207z"
           fill="#5D5D5D"
+        />
+        <path
+          d="M104.746 481.207l69.369 97.494v166.2L104.746 724V481.207z"
+          fill="#5D5D5D"
+          mask="url(#prefix__c)"
           vectorEffect="non-scaling-stroke"
+          strokeWidth={2}
           stroke="#2E2E2E"
           strokeLinecap="square"
           strokeMiterlimit={3}
@@ -271,6 +260,26 @@ function TimonerieSVG(props) {
           mask="url(#prefix__j)"
           strokeWidth={2}
           stroke="#04591B"
+          strokeLinecap="square"
+          strokeMiterlimit={3}
+        />
+        <mask id="prefix__k">
+          <path
+            d="M919.254 481.207l-70.139 97.494v166.2L919.254 724V481.207z"
+            fill="#fff"
+          />
+        </mask>
+        <path
+          d="M919.254 481.207l-70.139 97.494v166.2L919.254 724V481.207z"
+          fill="#5D5D5D"
+        />
+        <path
+          d="M919.254 481.207l-70.139 97.494v166.2L919.254 724V481.207z"
+          fill="#5D5D5D"
+          mask="url(#prefix__k)"
+          vectorEffect="non-scaling-stroke"
+          strokeWidth={2}
+          stroke="#2E2E2E"
           strokeLinecap="square"
           strokeMiterlimit={3}
         />
