@@ -7,7 +7,7 @@ class Map extends Component {
 
     render() {
         return (
-            <div id="Map">
+            <div id="Map" onClick={this.props.openMap}>
                 <img src='https://storage.googleapis.com/gweb-uniblog-publish-prod/images/New-global-view.max-1000x1000.jpeg' alt='map'></img>
             </div>
         )
