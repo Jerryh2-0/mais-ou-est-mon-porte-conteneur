@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import OpenedBook from './OpenedBook/OpenedBook'
+
 import './Details.css'
 
 class Details extends Component {
@@ -16,7 +18,7 @@ class Details extends Component {
                     : this.props.details === 'map' ?
                         <div id='map' style={{ color: 'white' }}>Carte pas encore disponible</div>
                     :
-                        <div id='book' style={{ color: 'white' }}>Carnet de bord pas encore disponible</div>
+                        <OpenedBook />
                 }
             </div>
         )

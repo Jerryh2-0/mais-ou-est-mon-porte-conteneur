@@ -31,16 +31,12 @@ class Timonerie extends Component {
         let xToMove = Math.round((35 - xInPercentage) / 5) * 5
 
         let direction = xToMove < 0 ? 'left' : 'right'
-        
-        console.log(this.state.moving)
 
         
         function iteration(i) {
-            console.log(i)
             return new Promise(async (resolve) => { 
                 setTimeout(() => {
                     this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
-                    console.log(marin.getBoundingClientRect().x)
                     if (i < Math.abs(xToMove) / 5 * 100) {
                         this.setState({ moving: direction})
                     } else {
@@ -54,13 +50,11 @@ class Timonerie extends Component {
         iteration = iteration.bind(this)
 
         await this.setState({ moving: direction })
-        console.log(Math.abs(xToMove) / 5)
         for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            await console.log(iteration(i))
-            console.log(i)
+            // await console.log(iteration(i))
+            await iteration(i)
         }
         await this.setState({ moving: '' })
-        console.log('class removed')
 
     }
 
@@ -72,16 +66,12 @@ class Timonerie extends Component {
         let xToMove = Math.round((43 - xInPercentage) / 5) * 5
 
         let direction = xToMove < 0 ? 'left' : 'right'
-        
-        console.log(this.state.moving)
 
         
         function iteration(i) {
-            console.log(i)
             return new Promise(async (resolve) => { 
                 setTimeout(() => {
                     this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
-                    console.log(marin.getBoundingClientRect().x)
                     if (i < Math.abs(xToMove) / 5 * 100) {
                         this.setState({ moving: direction})
                     } else {
@@ -95,13 +85,11 @@ class Timonerie extends Component {
         iteration = iteration.bind(this)
 
         await this.setState({ moving: direction })
-        console.log(Math.abs(xToMove) / 5)
         for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            await console.log(iteration(i))
-            console.log(i)
+            // await console.log(iteration(i))
+            await iteration(i)
         }
         await this.setState({ moving: '' })
-        console.log('class removed')
 
         
 
@@ -114,16 +102,12 @@ class Timonerie extends Component {
         let xToMove = Math.round((55 - xInPercentage) / 5) * 5
 
         let direction = xToMove < 0 ? 'left' : 'right'
-        
-        console.log(this.state.moving)
 
         
         function iteration(i) {
-            console.log(i)
             return new Promise(async (resolve) => { 
                 setTimeout(() => {
                     this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
-                    console.log(marin.getBoundingClientRect().x)
                     if (i < Math.abs(xToMove) / 5 * 100) {
                         this.setState({ moving: direction})
                     } else {
@@ -137,13 +121,11 @@ class Timonerie extends Component {
         iteration = iteration.bind(this)
 
         await this.setState({ moving: direction })
-        console.log(Math.abs(xToMove) / 5)
         for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            await console.log(iteration(i))
-            console.log(i)
+            // await console.log(iteration(i))
+            await iteration(i)
         }
         await this.setState({ moving: '' })
-        console.log('class removed')
 
     }
 

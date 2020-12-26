@@ -4,7 +4,11 @@
     position: absolute;
     z-index: 1000;
 
-    padding: 5%;
-
     background-color: #2E2E2E;
+
+    display: flex;
+}
+
+#Details #marinetraffic{
+    padding: 5%;
 }
