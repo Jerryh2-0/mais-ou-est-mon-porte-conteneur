@@ -1,0 +1,10 @@
+#Details {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+
+    padding: 5%;
+
+    background-color: #2E2E2E;
+}

@@ -42,6 +42,7 @@ class Timonerie extends Component {
                         this.setState({ moving: direction})
                     } else {
                         this.setState({ moving: '' })
+                        this.props.openDetails('gps')
                     }
                 }, 25);
             });
@@ -57,6 +58,8 @@ class Timonerie extends Component {
         }
         await this.setState({ moving: '' })
         console.log('class removed')
+
+        
 
     }
 
@@ -81,6 +84,7 @@ class Timonerie extends Component {
                         this.setState({ moving: direction})
                     } else {
                         this.setState({ moving: '' })
+                        this.props.openDetails('map')
                     }
                 }, 25);
             });
