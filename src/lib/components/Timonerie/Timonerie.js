@@ -51,8 +51,8 @@ class Timonerie extends Component {
 
         await this.setState({ moving: direction })
         for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            // await console.log(iteration(i))
-            await iteration(i)
+            await console.log(iteration(i))
+            // await iteration(i)
         }
         await this.setState({ moving: '' })
 
@@ -86,8 +86,8 @@ class Timonerie extends Component {
 
         await this.setState({ moving: direction })
         for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            // await console.log(iteration(i))
-            await iteration(i)
+            await console.log(iteration(i))
+            // await iteration(i)
         }
         await this.setState({ moving: '' })
 
@@ -122,8 +122,8 @@ class Timonerie extends Component {
 
         await this.setState({ moving: direction })
         for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            // await console.log(iteration(i))
-            await iteration(i)
+            await console.log(iteration(i))
+            // await iteration(i)
         }
         await this.setState({ moving: '' })
 
