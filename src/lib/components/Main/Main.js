@@ -39,7 +39,7 @@ class Main extends Component {
         return (
             <div id='Main'>
                 <Timonerie openDetails={ this.openDetails } />
-                {this.state.details ? <Details details={this.state.details} />: ''}
+                {this.state.details ? <Details details={this.state.details} closeDetails={this.closeDetails} />: ''}
             </div>
         )
     }

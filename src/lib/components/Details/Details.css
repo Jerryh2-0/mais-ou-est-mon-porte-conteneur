@@ -12,3 +12,10 @@
 #Details #marinetraffic{
     padding: 5%;
 }
+
+#Details #leave {
+    width: 4%;
+    position: absolute;
+    top: 0.5%;
+    right: 0.5%;
+}
