@@ -37,3 +37,18 @@
     height: 80vh;
     background-color: black;
 }
+
+.arrow {
+    position: absolute;
+    width: 5vw;
+    
+    top: 45%;
+}
+
+.arrow#leftArrow {
+    transform: scale(-1, 1);
+}
+
+.arrow#rightArrow {
+    left: 85%;
+}
