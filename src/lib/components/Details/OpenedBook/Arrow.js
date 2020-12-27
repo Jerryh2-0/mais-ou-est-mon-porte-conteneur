@@ -16,7 +16,7 @@ function Arrow(props) {
             <path d="M0 0h18v30H0z" />
             </clipPath>
         </defs>
-        <g clipPath="url(#prefix__a)" fill="#D5D558">
+        <g clipPath="url(#prefix__a)" fill={props.inactive ? "#616161" : "#D5D558"}>
             <path d="M0 5h10v20H0zM18 15l-8 15V0z" />
         </g>
         </svg>
