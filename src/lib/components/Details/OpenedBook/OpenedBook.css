@@ -16,6 +16,7 @@
     width: 40vw;
     height: 80vh;
 
+    font-size: 1.25vw;;
     font-family: 'Dancing Script', cursive;
 
     display: inline-block;
@@ -43,12 +44,14 @@
     width: 5vw;
     
     top: 45%;
+    left: 9%;
 }
 
 .arrow#leftArrow {
-    transform: scale(-1, 1);
+    transform: scale(-0.5, 1);
 }
 
 .arrow#rightArrow {
-    left: 85%;
+    transform: scale(0.5, 1);
+    left: 86%;
 }
