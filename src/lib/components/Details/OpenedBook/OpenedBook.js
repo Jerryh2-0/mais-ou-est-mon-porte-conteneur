@@ -32,7 +32,7 @@ class OpenedBook extends Component {
                 <div class='sep'></div>
                 <Page page={this.state.leftPage + 1} />
                 <Arrow id={'leftArrow'} onClick={this.state.leftPage !== 0 ? this.turnLeftPage : () => { }} inactive={this.state.leftPage == 0 ? true : false} />
-                <Arrow id={'rightArrow'} onClick={this.state.leftPage !== 2 ? this.turnRightPage : () => { }} inactive={this.state.leftPage == 2 ? true : false} />
+                <Arrow id={'rightArrow'} onClick={this.state.leftPage !== 22 ? this.turnRightPage : () => { }} inactive={this.state.leftPage == 22 ? true : false} />
             </div>
         )
     }
