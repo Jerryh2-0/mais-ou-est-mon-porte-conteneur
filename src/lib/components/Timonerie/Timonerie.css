@@ -22,7 +22,7 @@
     height: 10% !important;
     overflow-y: hidden;
 
-    z-index: 2;
+    z-index: 4;
 }
 
 #timonerie #GPS:hover {
@@ -42,7 +42,7 @@
     width: 13%;
     transform: rotate(35.5deg);
 
-    z-index: 2;
+    z-index: 4;
 }
 
 #timonerie #Map img {
@@ -57,7 +57,7 @@
     position: absolute;
     top: 40%;
 
-    z-index: 3;
+    z-index: 5;
 }
 
 #timonerie #marin svg {

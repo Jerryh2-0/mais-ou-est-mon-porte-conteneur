@@ -11,7 +11,8 @@ class Main extends Component {
         super()
 
         this.state = {
-            details: ''
+            details: '',
+            sockDropped: false
         }
 
         this.openDetails = this.openDetails.bind(this)
@@ -25,6 +26,10 @@ class Main extends Component {
 
     closeDetails() {
         this.setState({ details: "" })
+    }
+
+    dropSock() {
+        this.setState({ sockDropped: true })
     }
 
     componentDidMount() {

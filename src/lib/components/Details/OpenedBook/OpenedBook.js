@@ -23,6 +23,9 @@ class OpenedBook extends Component {
 
     turnRightPage() {
         this.setState({ leftPage: this.state.leftPage += 2})
+        if(this.state.leftPage === 22) {
+            this.props.dropSock()
+        }
     }
 
     render() {
