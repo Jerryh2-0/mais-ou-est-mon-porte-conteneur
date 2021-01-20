@@ -8,6 +8,8 @@ import Marin from './Marin'
 
 import './Timonerie.css'
 
+let timing = 25
+
 class Timonerie extends Component {
 
     constructor() {
@@ -32,27 +34,35 @@ class Timonerie extends Component {
 
         let direction = xToMove < 0 ? 'left' : 'right'
 
-        
-        function iteration(i) {
-            return new Promise(async (resolve) => { 
+
+        async function iteration(i) {
+            await this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
+            if (i <= Math.abs(xToMove) / 5 * 100 - 4) {
+                await this.setState({ moving: direction})
+            } else {
+                console.log('Now stopping to move')
+                await this.setState({ moving: '' })
+                await this.props.openDetails('book')
+                console.log('Now, opening book')
+            }
+
+
+            let promise = new Promise(function(resolve, reject) {
                 setTimeout(() => {
-                    this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
-                    if (i < Math.abs(xToMove) / 5 * 100) {
-                        this.setState({ moving: direction})
-                    } else {
-                        this.setState({ moving: '' })
-                        this.props.openDetails('book')
-                    }
-                }, 25);
-            });
+                    resolve('Resolved')
+                }, timing)
+            })
+
+            return promise
+            
         }
 
         iteration = iteration.bind(this)
 
         await this.setState({ moving: direction })
-        for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            await console.log(iteration(i))
-            // await iteration(i)
+        for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i += 4) {
+            let promise = await iteration(i)
+            console.log(promise)
         }
         await this.setState({ moving: '' })
 
@@ -68,26 +78,32 @@ class Timonerie extends Component {
         let direction = xToMove < 0 ? 'left' : 'right'
 
         
-        function iteration(i) {
-            return new Promise(async (resolve) => { 
+        async function iteration(i) {
+            await this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
+            if (i <= Math.abs(xToMove) / 5 * 100 - 4) {
+                await this.setState({ moving: direction})
+            } else {
+                await this.setState({ moving: '' })
+                await this.props.openDetails('gps')
+            }
+
+
+            let promise = new Promise(function(resolve, reject) {
                 setTimeout(() => {
-                    this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
-                    if (i < Math.abs(xToMove) / 5 * 100) {
-                        this.setState({ moving: direction})
-                    } else {
-                        this.setState({ moving: '' })
-                        this.props.openDetails('gps')
-                    }
-                }, 25);
-            });
+                    resolve('Resolved')
+                }, timing)
+            })
+
+            return promise
+            
         }
 
         iteration = iteration.bind(this)
 
         await this.setState({ moving: direction })
-        for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            await console.log(iteration(i))
-            // await iteration(i)
+        for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i += 4) {
+            let promise = await iteration(i)
+            console.log(promise)
         }
         await this.setState({ moving: '' })
 
@@ -104,26 +120,32 @@ class Timonerie extends Component {
         let direction = xToMove < 0 ? 'left' : 'right'
 
         
-        function iteration(i) {
-            return new Promise(async (resolve) => { 
+        async function iteration(i) {
+            await this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
+            if (i <= Math.abs(xToMove) / 5 * 100 - 4) {
+                await this.setState({ moving: direction})
+            } else {
+                await this.setState({ moving: '' })
+                await this.props.openDetails('map')
+            }
+
+
+            let promise = new Promise(function(resolve, reject) {
                 setTimeout(() => {
-                    this.setState({ x: direction === "left" ? (xInPercentage - i * 5 / 100) : (xInPercentage + i * 5 / 100) })
-                    if (i < Math.abs(xToMove) / 5 * 100) {
-                        this.setState({ moving: direction})
-                    } else {
-                        this.setState({ moving: '' })
-                        this.props.openDetails('map')
-                    }
-                }, 25);
-            });
+                    resolve('Resolved')
+                }, timing)
+            })
+
+            return promise
+            
         }
 
         iteration = iteration.bind(this)
 
         await this.setState({ moving: direction })
-        for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i++) {
-            await console.log(iteration(i))
-            // await iteration(i)
+        for(let i = 1; i <= Math.abs(xToMove) / 5 * 100; i += 4) {
+            let promise = await iteration(i)
+            console.log(promise)
         }
         await this.setState({ moving: '' })
 
