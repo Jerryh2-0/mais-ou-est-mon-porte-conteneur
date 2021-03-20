@@ -72,7 +72,13 @@ class Timonerie extends Component {
     async openGPS() {
         console.log('GO TO GPS')
         let marin = document.getElementById('marin')
-        let xInPercentage = marin.getBoundingClientRect().x / window.innerWidth * 100
+        
+        let xInPercentage;
+        if(marin.getBoundingClientRect().x / window.innerWidth * 100 < 43) {
+            xInPercentage = (marin.getBoundingClientRect().x - 0.11 * window.innerHeight) / window.innerWidth * 100
+        } else {
+            xInPercentage = marin.getBoundingClientRect().x / window.innerWidth * 100
+        }
         let xToMove = Math.round((43 - xInPercentage) / 5) * 5
 
         let direction = xToMove < 0 ? 'left' : 'right'
@@ -114,7 +120,7 @@ class Timonerie extends Component {
     async openMap() {
         console.log('GO TO MAP')
         let marin = document.getElementById('marin')
-        let xInPercentage = marin.getBoundingClientRect().x / window.innerWidth * 100
+        let xInPercentage = (marin.getBoundingClientRect().x - 0.11 * window.innerHeight) / window.innerWidth * 100
         let xToMove = Math.round((55 - xInPercentage) / 5) * 5
 
         let direction = xToMove < 0 ? 'left' : 'right'
