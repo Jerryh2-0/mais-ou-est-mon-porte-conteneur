@@ -9,8 +9,15 @@
     display: flex;
 }
 
-#Details #marinetraffic{
+#Details #marinetraffic {
     padding: 5%;
+}
+
+#Details #map {
+    width: 90vw;
+    height: 85vh;
+
+    margin: auto auto 5vh auto;
 }
 
 #Details #leave {
