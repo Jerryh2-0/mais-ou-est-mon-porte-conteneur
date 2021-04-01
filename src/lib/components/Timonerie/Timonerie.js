@@ -161,9 +161,19 @@ class Timonerie extends Component {
         return(
             <div id='timonerie'>
                 <TimonerieSVG />
-                <Book openBook={this.openBook} />
-                <GPS openGPS={this.openGPS} />
-                <Map openMap={this.openMap} />
+                <Book openBook={this.openBook} className="behind" />
+                <GPS openGPS={this.openGPS} className="behind" />
+                <Map openMap={this.openMap} className="behind" />
+                {
+                !this.state.moving ?
+                    <div>
+                        <Book openBook={this.openBook} className="inFront" />
+                        <GPS openGPS={this.openGPS} className="inFront" />
+                        <Map openMap={this.openMap} className="inFront" />
+                    </div>
+                :
+                    undefined
+                }
                 <Marin x={this.state.x} moving={this.state.moving} />
             </div>
         )

@@ -12,7 +12,7 @@ class Book extends Component{
 
     render() {
         return (
-            <div id='book' onClick={this.props.openBook}>
+            <div id='book' onClick={this.props.openBook} className={this.props.className ? this.props.className : ""}>
                 <BookSVG />
             </div>
             

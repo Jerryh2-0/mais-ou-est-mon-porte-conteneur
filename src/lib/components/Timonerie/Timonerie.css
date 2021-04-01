@@ -22,7 +22,7 @@
     height: 10% !important;
     overflow-y: hidden;
 
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 #timonerie #GPS:hover {
@@ -42,7 +42,7 @@
     width: 13%;
     transform: rotate(35.5deg);
 
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 #timonerie #Map img {
@@ -95,6 +95,18 @@
 
     transform-origin: top center;
     transform-box: fill-box;
+}
+
+.behind {
+    z-index: 4;
+}
+
+.inFront {
+    z-index: 6;
+}
+
+.inFront * {
+    opacity: 0;
 }
 
 @keyframes rotation {
