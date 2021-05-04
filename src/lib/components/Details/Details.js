@@ -20,7 +20,7 @@ class Details extends Component {
                     : this.props.details === 'map' ?
                         <div id='map' style={{ color: 'white' }}><iframe src="https://storymaps.arcgis.com/stories/3d22050f524240da814e89b725413229" width="100%" height="100%" frameborder="0" allowfullscreen allow="geolocation"></iframe></div>
                     :
-                        <OpenedBook />
+                        <OpenedBook dropSock={this.props.dropSock} />
                 }
             </div>
         )

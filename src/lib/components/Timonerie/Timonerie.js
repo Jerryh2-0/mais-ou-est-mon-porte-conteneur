@@ -27,7 +27,7 @@ class Timonerie extends Component {
 
 
     async openBook() {
-        console.log('GO TO BOOK')
+        if(this.props.sockDropped) return this.props.openDetails('book')
         let marin = document.getElementById('marin')
         let xInPercentage = marin.getBoundingClientRect().x / window.innerWidth * 100
         let xToMove = Math.round((35 - xInPercentage) / 5) * 5
@@ -70,7 +70,7 @@ class Timonerie extends Component {
 
     
     async openGPS() {
-        console.log('GO TO GPS')
+        if(this.props.sockDropped) return this.props.openDetails('gps')
         let marin = document.getElementById('marin')
         
         let xInPercentage;
@@ -118,7 +118,7 @@ class Timonerie extends Component {
     }
 
     async openMap() {
-        console.log('GO TO MAP')
+        if(this.props.sockDropped) return this.props.openDetails('map')
         let marin = document.getElementById('marin')
         let xInPercentage = (marin.getBoundingClientRect().x - 0.11 * window.innerHeight) / window.innerWidth * 100
         let xToMove = Math.round((55 - xInPercentage) / 5) * 5
@@ -174,7 +174,13 @@ class Timonerie extends Component {
                 :
                     undefined
                 }
-                <Marin x={this.state.x} moving={this.state.moving} />
+                {
+                    !this.props.sockDropped
+                    ?
+                    <Marin x={this.state.x} moving={this.state.moving} />
+                    :
+                    undefined
+                }
             </div>
         )
     }

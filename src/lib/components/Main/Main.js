@@ -17,6 +17,7 @@ class Main extends Component {
 
         this.openDetails = this.openDetails.bind(this)
         this.closeDetails = this.closeDetails.bind(this)
+        this.dropSock = this.dropSock.bind(this)
     }
 
     openDetails(details) {
@@ -29,6 +30,7 @@ class Main extends Component {
     }
 
     dropSock() {
+        console.log('DROPPED')
         this.setState({ sockDropped: true })
     }
 
@@ -43,8 +45,8 @@ class Main extends Component {
     render() {
         return (
             <div id='Main'>
-                <Timonerie openDetails={ this.openDetails } />
-                {this.state.details ? <Details details={this.state.details} closeDetails={this.closeDetails} />: ''}
+                <Timonerie openDetails={ this.openDetails } sockDropped={ this.state.sockDropped } />
+                {this.state.details ? <Details details={this.state.details} closeDetails={this.closeDetails} dropSock={this.dropSock} />: ''}
             </div>
         )
     }

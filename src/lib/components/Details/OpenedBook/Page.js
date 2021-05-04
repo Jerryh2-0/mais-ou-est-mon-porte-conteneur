@@ -12,13 +12,8 @@ class Page extends Component {
     render() {
         let content = []
 
-        console.log(this.props.page)
-        console.log(plainContent)
-
         if(!plainContent[this.props.page]) return <div className="Page"></div>
         plainContent[this.props.page].forEach(([tag, text]) => {
-            console.log(tag)
-            console.log(text)
             switch(tag) {
                 case 'h1':
                     content.push(<h1>{text}</h1>)
@@ -34,10 +29,7 @@ class Page extends Component {
                     break
             }
         })
-
-        console.log(content)
-        console.log(plainContent)
-
+        
         return (
             <div className="Page">
                 {content}

@@ -113,41 +113,52 @@ let plainContent = [
     ],
     [
         ['h2', 'Jeudi 4 février 2021, 6h46'],
-        ['p', 'Excuse moi encore petit carnet mais je n\'ai pas pu te remplir pendant plus d\'une semaine à cause du repas de mercredi dernier. On m\'a fait manger des fruits de mer sans me prévenir alors que je suis allergique. J\'ai donc été alité jusqu\'à aujourd\'hui. J\'espère que le cuisinier ne mettra plus de produits de la mer dans nos repas...']
-    ],
-    [
+        ['p', 'Excuse moi encore petit carnet mais je n\'ai pas pu te remplir pendant plus d\'une semaine à cause du repas de mercredi dernier. On m\'a fait manger des fruits de mer sans me prévenir alors que je suis allergique. J\'ai donc été alité jusqu\'à aujourd\'hui. J\'espère que le cuisinier ne mettra plus de produits de la mer dans nos repas... Nous sommes donc maintenant en 20° 54\' 36.612" N, 38° 22\' 9.3" E et nous naviguons à une vitesse de 18.6 noeuds avec un vent de force 5.'],
 
-    ],
-    [
+        ['h2', 'Samedi 6 février 2021, 5h00'],
+        ['p', 'Nous voici maintenant dans le port de Suez.'],
 
+        ['h2', 'Dimanche 7 février 2021, 9h37'],
+        ['p', 'Nous sommes maintenant en 33° 13\' 20.712" N, 26° 56\' 0.492" E et nous naviguons à 17.9 noeuds en mer Méditerranée. Le vent est de force 3.']
     ],
     [
+        ['h2', 'Lundi 8 février 2021, 3h18'],
+        ['p', 'Nous naviguons maintenant à une vitesse de 18.3 noeuds en 34° 44\' 0.132" N, 20° 51\' 55.26" E, au Sud de la Grèce et le vent est d\'une puissance 5.'],
 
-    ],
-    [
+        ['h2', 'Mardi 9 février 2021, 6h57'],
+        ['p', 'Nous voguons en 37° 20\' 59.208" N, 11° 26\' 55.968" E, au large de la Sicile. Notre navire avance à une vitesse de 17.5 noeuds malgré le vent de force 6.'],
 
+        ['h2', 'Jeudi 11 février 2021, 7h43'],
+        ['p', 'Nous avons passé le détroit de Gibraltar, nous sommes maintenant en 35° 58\' 14.952" N, 5° 52\' 51.841" W et nous naviguons à une vitesse de 17.0 noeuds avec un vent de force 3.']
     ],
     [
+        ['h2', 'Samedi 13 février 2021, 20h18'],
+        ['p', 'Nous naviguons maintenant à une vitesse de 18.5 noeuds à l\'Ouest de la France, en 44° 44\' 18.672" N, 8° 40\' 7.259" W. Le vent est de force 6.'],
 
-    ],
-    [
+        ['h2', 'Dimanche 14 février 2021, 9h13'],
+        ['p', 'Nous voici de retour en France, au port de Havre. Que cela fait bon de la revoir !'],
 
-    ],
-    [
+        ['h2', 'Mercredi 17 février 2021, 7h51'],
+        ['p','Nous sommes en 50° 32\' 23.172" N, 1° 5\' 24" E, nous passerons bientôt près de Calais. Le vent est de force 6.'],
 
+        
+        ['h2', 'Jeudi 18 février 2021, 6h55'],
+        ['p', 'Nous accostons maintenant le port de Dunkerque.']
     ],
     [
+        ['h2', 'Vendredi 19 février 2021, 15h54'],
+        ['p', 'Nous voici au large des Pays-Bas, en 52° 34\' 32.592" N, 3° 41\' 11.76" E. Nous naviguons à une vitesse de 16.8 noeuds.'],
 
-    ],
-    [
+        ['h2', 'Samedi 20 février 2021, 9h41'],
+        ['p', 'Wir sind in Hamburg.'],
 
+        ['h2', 'Mercredi 24 février 2021, 18h53'],
+        ['p', 'Nous naviguons maintenant à une vitesse de 7.9 noeuds en 53° 45\' 34.308" N, 5° 37\' 39.241" E en direction de Rotterdam.']
     ],
-    [
 
-    ],
     [
-        ['h2', 'Quelquechosedi JJ février 2021'],
-        ["p", "J'ai aujourd'hui reçu une lettre de licenciement. Les autres membres de l'équipage se serait plaint que je laisse mes T-shirt partout ! C'est pourtant faux, je ne laisse QUE trainer mes chaussettes ! Je devrais être récupéré par un navire cette après-midi. Quelle INJUSTICE d'être viré à cause d'un mensonge des autres marins ! Adieu chère carrière chez CMA CGM et adieu cher carnet de bord !"]
+        ['h2', 'Jeudi 25 février 2021, 9h59'],
+        ['p', 'J\'ai aujourd\'hui reçu une lettre de licenciement. Les autres membres de l\'équipage se serait plaint que je laisse mes T-shirt partout ! C\'est pourtant faux, je ne laisse QUE trainer mes chaussettes ! Je devrais être récupéré par un navire cette après-midi. Quelle INJUSTICE d\'être viré à cause d\'un mensonge des autres marins ! Adieu chère carrière chez CMA CGM et adieu cher carnet de bord, nous nous quittons à Rotterdam !']
     ]
 ]
 
