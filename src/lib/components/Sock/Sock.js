@@ -1,13 +1,17 @@
 import * as React from "react"
 
-function Socket(props) {
+import './Sock.css'
+
+function Sock(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      style={{
-        isolation: "isolate",
-        className='Socket'
-      }}
+      // style={{
+      //   isolation: "isolate",
+      // }}
+      style={props.style}
+      className='Sock'
+      onClick={() => props.onClick('label')}
     >
       <defs>
         <clipPath id="prefix__a">
@@ -51,4 +55,4 @@ function Socket(props) {
   )
 }
 
-export default Socket
+export default Sock

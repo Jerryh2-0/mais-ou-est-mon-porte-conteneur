@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Leave from './Leave'
 import OpenedBook from './OpenedBook/OpenedBook'
+import Label from '../Label'
 
 import './Details.css'
 
@@ -20,7 +21,10 @@ class Details extends Component {
                     : this.props.details === 'map' ?
                         <div id='map' style={{ color: 'white' }}><iframe src="https://storymaps.arcgis.com/stories/3d22050f524240da814e89b725413229" width="100%" height="100%" frameborder="0" allowfullscreen allow="geolocation"></iframe></div>
                     :
-                        <OpenedBook dropSock={this.props.dropSock} />
+                        this.props.details === 'book' ?
+                            <OpenedBook dropSock={this.props.dropSock} />
+                        :
+                            <Label />
                 }
             </div>
         )

@@ -1,0 +1,21 @@
+#Label {
+    width: 95%;
+    height: 100%;
+
+    margin: 2vh 10vw 2vh 10vw;
+    padding: 2vh 10vw 2vh 10vw;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+#Label span {
+    display: block;
+
+    width: 60vw;
+    
+    position: absolute;
+    left: 20vw;
+    bottom: 5vw;
+}

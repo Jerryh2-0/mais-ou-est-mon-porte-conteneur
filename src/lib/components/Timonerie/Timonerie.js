@@ -5,6 +5,7 @@ import Book from '../Book/Book'
 import GPS from '../GPS/GPS'
 import Map from '../Map/Map'
 import Marin from './Marin'
+import Sock from '../Sock'
 
 import './Timonerie.css'
 
@@ -158,6 +159,22 @@ class Timonerie extends Component {
     }
 
     render() {
+        const socks = []
+
+        for(let i = 0; i < 50; i++) {
+            socks.push(
+                <Sock
+                    style={{
+                        top: `${84 + Math.random() * 15}vh`,
+                        left: `${32 + Math.random() * 25}vw`,
+                        transform: `rotate(${Math.random() * 360}deg)`
+                    }}
+
+                    onClick={this.props.openDetails}
+                />
+            )
+        }
+
         return(
             <div id='timonerie'>
                 <TimonerieSVG />
@@ -179,7 +196,7 @@ class Timonerie extends Component {
                     ?
                     <Marin x={this.state.x} moving={this.state.moving} />
                     :
-                    undefined
+                    socks
                 }
             </div>
         )
